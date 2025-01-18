@@ -1,0 +1,109 @@
+.projects {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #020202;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding-top: 100px;
+}
+
+.project_header {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #f7df1e;
+}
+
+/* Grid for Project Cards */
+.projects_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: auto auto auto; */
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Project Card */
+.project_card {
+    background: #000000;
+    width: 100%;
+    /* border: 2px solid #f7df1e; */
+    border-radius: 20px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(196, 255, 1, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(241, 5, 5, 0.3);
+}
+
+/* Project image */
+.project_image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Description */
+.project_description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+/* Buttons */
+.project_buttons {
+    text-decoration: none;
+    color: #fff;
+    /* background-color: #007bff; */
+    padding: 0.5rem 1rem;
+    border: 1px solid #f7df1e;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 80px;
+    min-height: auto;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.project_button {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #f7df1e;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project_button:hover {
+    /* background-color: #0056b3; */
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(201, 245, 2, 0.3);
+}
+
+.project_buttons:hover {
+    /* background-color: #0056b3; */
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(201, 245, 2, 0.3);
+}
+
+.project_button i {
+    font-size: 1.2rem;
+}

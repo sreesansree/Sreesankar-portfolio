@@ -1,0 +1,47 @@
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    background-color: #000000;
+    text-align: center;
+}
+
+/* Header */
+.about__header {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: #333;
+}
+
+/* Content Container */
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Circular Profile Image */
+.about__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #c5c5c9;
+    animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+    50% {
+        box-shadow: 0 5px 5px white;
+    }
+}
+
+/* Paragraph */
+.about__description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
