@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import "./style.css";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaDownload } from "react-icons/fa";
 import profilePic from "../../assets/sreesankar.jpg";
+import resumeFile from "../../assets/Sreesankarp-Resume.pdf";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +13,11 @@ const Header = () => {
   };
 
   const handleScrollToSection = (section) => {
+    if (section === "Resume") {
+      // skip scrolling for Resume and trigger download
+      return;
+    }
+
     const targetElement = document.getElementById(section);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
@@ -61,7 +67,18 @@ const Header = () => {
               }`}
               onClick={() => handleScrollToSection(section)}
             >
-              {section}
+              {section === "Resume" ? (
+                <a
+                  href={resumeFile}
+                  download={"Sresankar_Resume.pdf"}
+                  className="header_resume-link"
+                  onClick={() => setActiveSection("Resume")}
+                >
+                  Resume <FaDownload className="download-icon" />
+                </a>
+              ) : (
+                section
+              )}
             </h3>
           ))}
         </nav>

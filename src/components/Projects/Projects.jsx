@@ -13,6 +13,7 @@ const Projects = () => {
               alt={`Project ${index + 1}`}
               className="project_image"
             />
+            <h2 className="project_title">{project?.title}</h2>
             <p className="project_description">{project.description}</p>
             <div className="btn">
               <a

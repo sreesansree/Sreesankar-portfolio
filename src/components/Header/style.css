@@ -72,6 +72,35 @@
     }
 }
 
+.download-icon {
+    margin-left: 8px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.header_resume-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.header_resume-link:hover {
+    color: var(--primary-color);
+}
+
 .header__nav {
     display: flex;
     gap: 1rem;
@@ -88,7 +117,7 @@
 }
 
 .header__link:hover {
-  color: #007bff;
+    color: #007bff;
 }
 
 .header__link.active {
