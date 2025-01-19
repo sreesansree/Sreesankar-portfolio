@@ -156,6 +156,15 @@
 /* Responsive styles */
 
 @media(max-width:768px) {
+
+    .header__logo {
+        font-size: 1.3rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+    }
+
     .header__nav {
         position: absolute;
         top: 100%;
@@ -178,6 +187,7 @@
 
     .header__menu-icon {
         display: block;
+        width: 10%;
     }
 
     .header__nav:hover {
