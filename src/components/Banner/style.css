@@ -2,14 +2,15 @@
 .banner {
     position: relative;
     height: 100vh;
-    background: url('https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg') center/cover no-repeat;
-
+    /* background: url('https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg') center/cover no-repeat; */
+    background-color: black;
     /* Background image */
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+    border-bottom: 1px solid #5fb603;
 }
 
 /* Banner Content */
@@ -21,9 +22,60 @@
     max-width: 600px;
 }
 
+.banner-hai:hover {
+    display: inline-block;
+    animation: shake 2s infinite ease;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
 /* Banner-title */
 .banner-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
     animation: fadeIn 2s ease-out;
@@ -66,7 +118,7 @@
 /* Responsive styles for smaller screens */
 @media (max-width:768px) {
     .banner-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .banner-description {
@@ -76,5 +128,126 @@
     .banner-button {
         font-size: 1rem;
         padding: 0.5rem 1.5rem;
+    }
+}
+
+/* Full-screen area with circles */
+.area {
+    background: black; /* Set background to black */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Prevent circles from overflowing the screen */
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Ensure it's on the correct layer */
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(155, 250, 2, 0.2); /* Circle color */
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    border-radius: 50%; /* Ensure the circles are round */
+}
+
+/* Circle specific styles */
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+/* Animation for circles */
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 50%;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
     }
 }

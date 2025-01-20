@@ -53,7 +53,7 @@ const Footer = () => {
               <i className="fab fa-github"></i>
             </a>
             <a
-              href="https://linkedin.com/sreesankar-p/"
+              href="https://www.linkedin.com/in/sreesankar-p/"
               target="_blank"
               rel="noopener noreferrer"
               className="footer__icon"

@@ -55,7 +55,10 @@ const Header = () => {
       <header className="header">
         <div className="header__logo">
           <img src={profilePic} alt="profile" className="header__image" />
-          <h3 className="header_name">Sreesankar p</h3>
+          <h3 className="header_name">
+            {" "}
+            <a href="#home"> Sreesankar p </a>
+          </h3>
         </div>
 
         <nav className={`header__nav ${isMenuOpen ? "header__nav--open" : ""}`}>

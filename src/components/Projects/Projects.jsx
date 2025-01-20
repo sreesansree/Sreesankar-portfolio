@@ -30,7 +30,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="project_button"
               >
-                <i className="fa fa-github"></i> GitHub
+                <i className="fab fa-github"></i> GitHub
               </a>
             </div>
           </div>

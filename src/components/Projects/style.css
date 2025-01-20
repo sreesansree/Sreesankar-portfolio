@@ -6,6 +6,8 @@
     border-radius: 2px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     padding-top: 100px;
+    border-bottom: 1px solid #5fb603;
+
 }
 
 .project_header {
@@ -117,4 +119,7 @@
 
 .project_button i {
     font-size: 1.2rem;
+}
+.fa{
+    color: #41f605;
 }
