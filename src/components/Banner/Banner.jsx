@@ -10,9 +10,7 @@ const Banner = () => {
           {`I'm a passionate web developer dedicated to creating beautiful and
   functional user experiences.`}
         </p>
-        {/* <a href="#projects" className="banner-button">
-          View My Work
-        </a> */}
+      
       </div>
       <div className="area">
         <ul className="circles">

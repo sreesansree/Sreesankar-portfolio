@@ -21,57 +21,28 @@
     padding: 1rem;
     max-width: 600px;
 }
+.banner-hai {
+    display: inline-block;
+    animation: none;
+}
 
 .banner-hai:hover {
-    display: inline-block;
-    animation: shake 2s infinite ease;
+    animation: shake 0.5s infinite ease-in-out;
+    border: 1px solid red !important; /* Force border rendering */
 }
 
 @keyframes shake {
     0% {
         transform: translate(1px, 1px) rotate(0deg);
     }
-
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-
     50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
+        transform: translate(-2px, -2px) rotate(-2deg);
     }
-
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-
     100% {
-        transform: translate(1px, -2px) rotate(-1deg);
+        transform: translate(2px, 2px) rotate(2deg);
     }
 }
+
 
 /* Banner-title */
 .banner-title {
@@ -133,11 +104,13 @@
 
 /* Full-screen area with circles */
 .area {
-    background: black; /* Set background to black */
+    background: black;
+    /* Set background to black */
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow: hidden; /* Prevent circles from overflowing the screen */
+    overflow: hidden;
+    /* Prevent circles from overflowing the screen */
 }
 
 .circles {
@@ -147,7 +120,8 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 1; /* Ensure it's on the correct layer */
+    z-index: 1;
+    /* Ensure it's on the correct layer */
 }
 
 .circles li {
@@ -156,10 +130,12 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(155, 250, 2, 0.2); /* Circle color */
+    background: rgba(155, 250, 2, 0.2);
+    /* Circle color */
     animation: animate 25s linear infinite;
     bottom: -150px;
-    border-radius: 50%; /* Ensure the circles are round */
+    border-radius: 50%;
+    /* Ensure the circles are round */
 }
 
 /* Circle specific styles */
@@ -245,6 +221,7 @@
         opacity: 1;
         border-radius: 50%;
     }
+
     100% {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;

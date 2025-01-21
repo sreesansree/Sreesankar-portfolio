@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
 import Loading from "./components/Loading/Loading.jsx";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -28,6 +29,7 @@ function App() {
           <Projects />
           <ContactForm />
           <Footer />
+          <ScrollToTop />
         </>
       )}
     </>
