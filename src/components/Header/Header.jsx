@@ -24,6 +24,7 @@ const Header = () => {
       setActiveSection(section);
     }
     if (isMenuOpen) {
+      setIsMenuOpen(!isMenuOpen);
       setActiveSection(false); // Close menu after clicking
     }
   };
