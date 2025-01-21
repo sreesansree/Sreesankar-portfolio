@@ -7,8 +7,8 @@ const Banner = () => {
           <span className="banner-hai">👋</span> Welcome to My Portfolio
         </h1>
         <p className="banner-description">
-          Im a passionate web developer focused on creating beautiful and
-          functional user experiences.
+          {`I'm a passionate web developer dedicated to creating beautiful and
+  functional user experiences.`}
         </p>
         {/* <a href="#projects" className="banner-button">
           View My Work
