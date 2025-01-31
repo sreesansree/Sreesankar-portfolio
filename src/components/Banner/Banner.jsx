@@ -4,7 +4,10 @@ const Banner = () => {
     <section id="Home" className="banner">
       <div className="banner-content">
         <h1 className="banner-title">
-          <span className="banner-hai">👋</span> Welcome to My Portfolio
+          <span className="banner-hai">👋</span> 
+          <span className="neon-text">
+          Welcome to My Portfolio
+            </span>
         </h1>
         <p className="banner-description">
           {`I'm a passionate web developer dedicated to creating beautiful and

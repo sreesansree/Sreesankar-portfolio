@@ -2,6 +2,7 @@ import projects from "../../constants/Project.js";
 import "./style.css";
 
 const Projects = () => {
+  console.log(projects);
   return (
     <section className="projects" id="Projects">
       <h3 className="project_header">My Projects</h3>
@@ -16,22 +17,35 @@ const Projects = () => {
             <h2 className="project_title">{project?.title}</h2>
             <p className="project_description">{project.description}</p>
             <div className="btn">
-              <a
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project_buttons"
-              >
-                <i className="fa fa-link"></i> Live
-              </a>
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project_button"
-              >
-                <i className="fab fa-github"></i> GitHub
-              </a>
+              {project.liveLink ? (
+                <>
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project_buttons"
+                  >
+                    <i className="fa fa-link"></i> Live
+                  </a>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project_button"
+                  >
+                    <i className="fab fa-github"></i> GitHub
+                  </a>
+                </>
+              ) : (
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project_button center_button"
+                >
+                  <i className="fab fa-github"></i> GitHub
+                </a>
+              )}
             </div>
           </div>
         ))}
@@ -41,4 +55,3 @@ const Projects = () => {
 };
 
 export default Projects;
-2;
