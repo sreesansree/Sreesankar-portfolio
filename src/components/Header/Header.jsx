@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./style.css";
 import { FaBars, FaTimes, FaDownload } from "react-icons/fa";
-import profilePic from "../../assets/sreesankar.jpg";
+import profilePic from "../../assets/sree.jpg";
 import resumeFile from "../../assets/Sreesankarp-Resume.pdf";
 
 const Header = () => {

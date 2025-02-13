@@ -24,15 +24,15 @@
 
 .banner-hai {
     display: inline-block;
-    animation: none;
+    /* animation: none; */
 }
 
-.banner-hai:hover {
+/* .banner-hai:hover {
     animation: shake 0.5s infinite ease-in-out;
     border: 1px solid red !important;
-    /* Force border rendering */
-}
+} */
 
+/* 
 @keyframes shake {
     0% {
         transform: translate(1px, 1px) rotate(0deg);
@@ -46,25 +46,26 @@
         transform: translate(2px, 2px) rotate(2deg);
     }
 }
-
+ */
 
 /* Banner-title */
 .banner-title {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    animation: fadeIn 2s ease-out;
 }
 
 .neon-text {
     font-size: 2.5rem;
     color: #fff;
-    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
-    animation: glow 1.5s infinite alternate;
+    /* text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e; */
+    /* animation: glow 1.5s infinite alternate; */
+    animation: fadeIn 2s ease-out;
+
     
 }
 
-@keyframes glow {
+/* @keyframes glow {
     0% {
         text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
     }
@@ -72,7 +73,7 @@
     100% {
         text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
     }
-}
+} */
 
 
 
