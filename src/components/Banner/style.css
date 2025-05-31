@@ -2,7 +2,7 @@
 .banner {
     position: relative;
     height: 100vh;
-    /* background: url('https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg') center/cover no-repeat; */
+    /* background: url('') center/cover no-repeat; */
     background-color: black;
     /* Background image */
     display: flex;
@@ -11,6 +11,30 @@
     color: white;
     text-align: center;
     border-bottom: 1px solid #5fb603;
+}
+
+.banner__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 2;
+    width: 550px;
+    height: 550px;
+    border-radius: 20%;
+    opacity: 0.8;
+    object-fit: cover;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 2px solid #98e40a;
+    animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+    50% {
+        box-shadow: 0 3px 4px rgb(74, 246, 80);
+    }
 }
 
 /* Banner Content */
@@ -27,26 +51,6 @@
     /* animation: none; */
 }
 
-/* .banner-hai:hover {
-    animation: shake 0.5s infinite ease-in-out;
-    border: 1px solid red !important;
-} */
-
-/* 
-@keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-
-    50% {
-        transform: translate(-2px, -2px) rotate(-2deg);
-    }
-
-    100% {
-        transform: translate(2px, 2px) rotate(2deg);
-    }
-}
- */
 
 /* Banner-title */
 .banner-title {
@@ -58,32 +62,53 @@
 .neon-text {
     font-size: 2.5rem;
     color: #fff;
-    /* text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e; */
-    /* animation: glow 1.5s infinite alternate; */
+   
     animation: fadeIn 2s ease-out;
 
-    
+
 }
-
-/* @keyframes glow {
-    0% {
-        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
-    }
-
-    100% {
-        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
-    }
-} */
-
-
-
-
 
 /* Banner Description */
 .banner-description {
     font-size: 1.25rem;
     margin-bottom: 2rem;
     animation: fadeIn 2s ease-out;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 2rem;
+    margin-bottom: 2rem;
+
+    /* Fade effect using masking */
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+.scrolling-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 12s linear infinite;
+    font-size: 1.25rem;
+    color: #fff;
+
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(10);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scroll-container:hover .scrolling-text {
+    animation-play-state: paused;
 }
 
 .banner-button {
@@ -147,7 +172,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 1;
+    z-index: 0;
     /* Ensure it's on the correct layer */
 }
 

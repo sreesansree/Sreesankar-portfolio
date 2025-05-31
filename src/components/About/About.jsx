@@ -8,7 +8,7 @@ const About = () => {
       <div className="about__content">
         <img src={profilePic} alt="profile" className="about__image" />
         <p className="about__description">
-          {`Hi, I’m Sreesankar P., a passionate web developer specializing in creating dynamic and responsive web applications. With a strong foundation in React and the MERN stack, I enjoy turning ideas into user-friendly digital solutions. Let’s build something amazing together!`}
+          {`Hi, I’m Sreesankar P, A passionate web developer specializing in creating dynamic and responsive web applications. With a strong foundation in React and the MERN stack, I enjoy turning ideas into user-friendly digital solutions. Let’s build something amazing together!`}
         </p>
         <h3>-----------------My Skills-----------------</h3>
 

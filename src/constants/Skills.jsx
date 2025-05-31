@@ -81,12 +81,12 @@ const Skills = () => {
       alt: "socketio",
     },
     {
-      src: "https://uxwing.com/wp-content/themes/uxwing/download/file-and-folder-type/file-json-color-green-icon.png",
-      alt: "json",
-    },
-    {
       src: "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png",
       alt: "firebase",
+    },
+    {
+      src: "https://cdn2.vectorstock.com/i/1000x1000/50/61/json-file-document-icon-vector-24685061.jpg",
+      alt: "json",
     },
   ];
 

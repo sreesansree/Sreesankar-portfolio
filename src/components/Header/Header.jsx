@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./style.css";
 import { FaBars, FaTimes, FaDownload } from "react-icons/fa";
 import profilePic from "../../assets/sree.jpg";
-import resumeFile from "../../assets/Sreesankarp-Resume.pdf";
+import resumeFile from "../../assets/SreesankarpResume.pdf";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
