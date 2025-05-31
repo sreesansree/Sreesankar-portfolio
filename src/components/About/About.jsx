@@ -1,5 +1,5 @@
 import "./style.css";
-import profilePic from "../../assets/sree.jpg";
+import profilePic from "../../assets/sree.jpg"
 import Skills from "../../constants/Skills.jsx";
 const About = () => {
   return (
