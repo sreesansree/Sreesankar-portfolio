@@ -1,5 +1,5 @@
 import "./style.css";
-import profilePic from "../../assets/sree.jpg";
+import sreeImage from "../../assets/sree.jpg";
 import Skills from "../../constants/Skills.jsx";
 const About = () => {
   return (
@@ -7,7 +7,7 @@ const About = () => {
       <h2 className="about__header">About me</h2>
       <div className="about__content">
         <img
-          src="/assets/sree.jpg"
+          src={sreeImage}
           alt="Sree Sankar"
           className="about__image"
         />
