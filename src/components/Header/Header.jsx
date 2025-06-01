@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./style.css";
 import { FaBars, FaTimes, FaDownload } from "react-icons/fa";
-import profilePic from "../../assets/sree.jpg";
+import sreeImage from "../../assets/sree.jpg";
 import resumeFile from "../../assets/SreesankarpResume.pdf";
 
 const Header = () => {
@@ -55,7 +55,7 @@ const Header = () => {
     <>
       <header className="header">
         <div className="header__logo">
-          <img src={profilePic} alt="profile" className="header__image" />
+          <img src={sreeImage} alt="profile" className="header__image" />
           <h3 className="header_name">
             {" "}
             <a href="#home"> Sreesankar p </a>
