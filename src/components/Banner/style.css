@@ -14,21 +14,16 @@
 }
 
 .banner__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    z-index: 2;
-    width: 550px;
-    height: 550px;
-    border-radius: 20%;
-    opacity: 0.8;
-    object-fit: cover;
-    flex-wrap: wrap;
-    padding: 2rem;
-    margin-top: 2rem;
-    border: 2px solid #98e40a;
-    animation: mymove 3s infinite;
+    width: 60%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 20%;
+  opacity: 0.8;
+  object-fit: cover;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 2px solid #98e40a;
+  animation: mymove 3s infinite;
 }
 
 @keyframes mymove {
@@ -43,7 +38,8 @@
     text-align: center;
     z-index: 1;
     padding: 1rem;
-    max-width: 600px;
+    max-width: 90%;
+
 }
 
 .banner-hai {
@@ -62,7 +58,7 @@
 .neon-text {
     font-size: 2.5rem;
     color: #fff;
-   
+
     animation: fadeIn 2s ease-out;
 
 
@@ -141,11 +137,26 @@
 /* Responsive styles for smaller screens */
 @media (max-width:768px) {
     .banner-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
+
+    .neon-text {
+        font-size: 1.5rem;
+    }
+
 
     .banner-description {
         font-size: 1rem;
+    }
+
+    .banner__image {
+        width: 70%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .scroll-container {
+        height: 1.5rem;
     }
 
     .banner-button {
